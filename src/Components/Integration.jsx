@@ -1,4 +1,5 @@
 import React from "react";
+import Tabpanel from "../Components/Tabpanel"
 import Go from "../assets/Images/IntegrationImg/Go.png";
 import Java from "../assets/Images/IntegrationImg/Java.png";
 import Node from "../assets/Images/IntegrationImg/Node.png";
@@ -50,6 +51,7 @@ const Integration = () => {
 </div>
 
       </div>
+      <Tabpanel />
     </section>
   );
 };
