@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const navLinks = [
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
@@ -13,22 +16,21 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full bg-black text-white font-[Inter]">
+    <nav className="w-full h-16 bg-black text-white font-[Inter] fixed">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
-        <NavLink to="/" className="text-white font-semibold text-sm">
+        <NavLink to="/" className="text-white font-semibold text-md">
           Resend
         </NavLink>
 
-        {/* Nav Links */}
+        {/* Desktop Nav Links */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] 
-                tracking-[0%] align-middle transition ${
+                `text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] tracking-[0%] align-middle transition ${
                   isActive ? "text-white" : "hover:text-white"
                 }`
               }
@@ -38,7 +40,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Right Side */}
+        {/* Right Side Buttons (always visible) */}
         <div className="flex items-center space-x-4 text-sm">
           <NavLink
             to="/signin"
@@ -56,6 +58,43 @@ const Navbar = () => {
           >
             Get Started <span className="ml-1">›</span>
           </NavLink>
+
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? (
+                <HiX className="text-3xl text-white" />
+              ) : (
+                <HiMenu className="text-3xl text-white" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`fixed top-[50px] left-0 w-full bg-black shadow-md overflow-hidden transition-all duration-500 ease-in-out z-40 ${
+          isOpen ? "max-h-[500px]" : "max-h-0"
+        }`}
+      >
+        <div className="grid grid-cols-2 gap-x-4 gap-y-3 px-4 py-4">
+          {navLinks.map((item, index) => (
+            <NavLink
+              key={item.name}
+              to={item.path}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `flex items-center justify-center text-center px-4 py-3 text-sm font-medium rounded-lg ${
+                  index === 0 ? "mt-2 pt-4" : ""
+                } ${
+                  isActive
+                    ? "bg-purple-200 text-white"
+                    : "text-white hover:text-purple-200"
+                }`
+              }
+            >
+              {item.name}
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>

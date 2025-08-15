@@ -8,7 +8,7 @@ const HeroSection = () => {
       className="text-white bg-black w-full py-20 bg-cover bg-center"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 mt-16">
          
         <div className="flex-1 max-w-lg">
         
@@ -23,8 +23,8 @@ const HeroSection = () => {
           </a>
 
           
-          <h1 className="text-5xl font-semibold leading-tight mb-4">
-            Email for <br /> developers
+          <h1 className="text-5xl font-semibold font-[Inter] leading-tight mb-4">
+            Email For <br /> Developers
           </h1>
 
           
