@@ -32,7 +32,7 @@ const TrustedCompanies = () => {
     <section className="bg-black py-8 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
          
-        <div className="relative flex justify-center items-center mt-10">
+        <div className="relative flex justify-center items-center md:mt-10 mt-0">
           
           <div
             className="rounded-full"
@@ -47,7 +47,7 @@ const TrustedCompanies = () => {
 
            
           <div
-  className="absolute rounded-full left-1/2 -translate-x-1/2 mt-2 w-[250px] md:w-[350px] h-[200px] top-[-103px]"
+  className="absolute rounded-full left-1/2 -translate-x-1/2 md:mt-2 w-[100px] h-[100px] mt-14 md:w-[350px] md:h-[200px] top-[-103px]"
   style={{
     background:
       "radial-gradient(70.71% 70.71% at 50% 50%, rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
