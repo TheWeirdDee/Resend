@@ -1,14 +1,15 @@
 import React from "react";
 import ResendHeroImage from "../assets/Images/ResendHeroImage.png";
 import HeroBg from "../assets/Images/ResendHerobg.png";
-
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section
       className="text-white bg-black w-full py-20 bg-cover bg-center"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 mt-16">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 mt-10 md:mt-16">
          
         <div className="flex-1 max-w-lg">
         
@@ -58,12 +59,21 @@ const HeroSection = () => {
 
     
         <div className="flex-1 flex justify-center max-w-md">
-          <img
-            src={ResendHeroImage}
-            alt="Cube"
-            className="w-[300px] md:w-[400px] object-contain"
-          />
-        </div>
+      <motion.img
+        src={ResendHeroImage}
+        alt="Cube"
+        className="w-[300px] md:w-[400px] object-contain"
+        animate={{
+          y: [0, -10, 0, 10, 0],  
+          x: [0, 5, 0, -5, 0],    
+        }}
+        transition={{
+          duration: 2,  
+          repeat: Infinity,  
+          ease: "easeInOut",
+        }}
+      />
+    </div>
       </div>
     </section>
   );

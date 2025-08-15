@@ -47,19 +47,17 @@ const TrustedCompanies = () => {
 
            
           <div
-            className="absolute rounded-full left-1/2 -translate-x-1/2 mt-2"
-            style={{
-              width: "350px",
-              height: "200px",
-              top: "-103px",
-              background:
-                "radial-gradient(70.71% 70.71% at 50% 50%, rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
-            }}
-          ></div>
+  className="absolute rounded-full left-1/2 -translate-x-1/2 mt-2 w-[250px] md:w-[350px] h-[200px] top-[-103px]"
+  style={{
+    background:
+      "radial-gradient(70.71% 70.71% at 50% 50%, rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
+  }}
+></div>
+
         </div>
 
         
-        <p className="text-gray-400 text-[14px] leading-[20px] font-inter font-[400] mt-16">
+        <p className="text-gray-400 text-[14px] leading-[20px] font-[Inter] font-[400] mt-16">
           Companies of all sizes trust Resend <br />
           to deliver their most important emails.
         </p>
