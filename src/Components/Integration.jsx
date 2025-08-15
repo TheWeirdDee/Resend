@@ -16,11 +16,11 @@ const Integration = () => {
     <section className="bg-black py-12">
       <div className="max-w-6xl mx-auto text-center px-4">
         
-        {/* Top Section */}
+         
         <img 
           src={Integrate} 
           alt="Integrate Banner" 
-          className="mx-auto mb-6 max-w-[160px] w-full h-auto object-contain" 
+          className="mx-auto mb-6 md:max-w-[160px] max-w-[100px]  w-full h-auto object-contain" 
         />
         
         <h2 className="text-white text-2xl font-semibold mb-3">
@@ -35,7 +35,7 @@ const Integration = () => {
           It fits right into your code with SDKs for your favorite programming languages.
         </p>
 
-        {/* Logos Grid */}
+         
         <div className="grid grid-cols-5 lg:grid-cols-10 gap-x-6 gap-y-8 items-center justify-items-center">
   <img src={Node} alt="Node.js" className="w-[68px] h-[94.39px] object-contain" />
   <img src={Go} alt="Go Programming" className="w-[68px] h-[94.39px] object-contain" />
