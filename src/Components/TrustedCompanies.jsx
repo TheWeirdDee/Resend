@@ -7,7 +7,7 @@ import Payload from "../assets/Images/TrustedCompanies/Payload.png";
 import liveblocks from "../assets/Images/TrustedCompanies/Liveblocks.png";
 import shepherd from "../assets/Images/TrustedCompanies/Shepherd.png";
 import infisical from "../assets/Images/TrustedCompanies/Infisical.png";
-import leap from "../assets/Images/TrustedCompanies/leap.png";
+import leap from "../assets/Images/TrustedCompanies/Leap.png";
 import chatbase from "../assets/Images/TrustedCompanies/Chatbase.png";
 import craiyon from "../assets/Images/TrustedCompanies/Craiyon.png";
 import guruhotel from "../assets/Images/TrustedCompanies/Guru.png";
