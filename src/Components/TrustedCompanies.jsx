@@ -32,8 +32,9 @@ const TrustedCompanies = () => {
     <section className="bg-black py-8 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
          
-        <div className="relative flex justify-center items-center md:mt-10 mt-0">
+        <div className="relative flex justify-center items-center md:mt-10 mb-10">
           
+          {/* Boder Top */}
           <div
             className="rounded-full"
             style={{
@@ -45,7 +46,7 @@ const TrustedCompanies = () => {
             }}
           ></div>
 
-           
+           {/* Border Top Light */}
           <div
   className="absolute rounded-full left-1/2 -translate-x-1/2 md:mt-2 w-[100px] h-[100px] mt-14 md:w-[350px] md:h-[200px] top-[-103px]"
   style={{

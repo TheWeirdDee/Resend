@@ -18,8 +18,8 @@ const Navbar = () => {
   return (
     <nav className="w-full h-16 bg-black text-white font-[Inter] fixed z-10">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-        {/* Logo */}
-        <NavLink to="/" className="text-white font-semibold text-md">
+        
+        <NavLink to="/" className="text-white font-semibold text-lg">
           Resend
         </NavLink>
 
@@ -39,9 +39,8 @@ const Navbar = () => {
             </NavLink>
           ))}
         </div>
-
-        {/* Right Side Buttons (always visible) */}
-        <div className="flex items-center space-x-4 text-sm">
+ 
+        <div className="flex items-center space-x-4 text-md">
           <NavLink
             to="/signin"
             className={({ isActive }) =>
@@ -83,12 +82,12 @@ const Navbar = () => {
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `flex items-center justify-center text-center px-4 py-3 text-sm font-medium rounded-lg ${
+                `flex items-center justify-center text-center px-4 py-3 text-md text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] rounded-lg ${
                   index === 0 ? "mt-2 pt-4" : ""
                 } ${
                   isActive
-                    ? "bg-purple-200 text-white"
-                    : "text-white hover:text-purple-200"
+                    ? "bg-[hsla(212,87%,97%,0.71)] text-white"
+                    : "text-[hsla(212,87%,97%,0.71)] hover:text-purple-200"
                 }`
               }
             >

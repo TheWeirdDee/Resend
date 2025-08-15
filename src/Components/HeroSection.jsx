@@ -9,7 +9,7 @@ const HeroSection = () => {
       className="text-white bg-black w-full py-20 bg-cover bg-center"
       style={{ backgroundImage: `url(${HeroBg})` }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 mt-10 md:mt-16">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-8 mt-7 md:mt-16">
          
         <div className="flex-1 max-w-lg">
         

@@ -37,7 +37,7 @@ const Integration = () => {
         </p>
 
          
-        <div className="grid grid-cols-5 lg:grid-cols-10 gap-x-6 gap-y-8 items-center justify-items-center">
+  <div className="grid grid-cols-5 lg:grid-cols-10 gap-x-6 gap-y-5 items-center justify-items-center">
   <img src={Node} alt="Node.js" className="w-[68px] h-[94.39px] object-contain" />
   <img src={Go} alt="Go Programming" className="w-[68px] h-[94.39px] object-contain" />
   <img src={Java} alt="Java" className="w-[68px] h-[94.39px] object-contain" />

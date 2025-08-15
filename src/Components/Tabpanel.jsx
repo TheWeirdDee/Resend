@@ -8,10 +8,10 @@ const Tabpanel = () => {
         src={TabpanelImage}
         alt="Tabpanel"
         className="
-          w-[98%] max-w-[1024px]   /* width adjusts on small screens */
-          h-auto                   /* height scales proportionally */
-          rounded-[20px] 
-          border border-gray-100
+          w-[98%] max-w-[1024px]    
+          h-auto                    
+          rounded-[26px] 
+          border border-gray-100/40
           object-contain
         "
         style={{
