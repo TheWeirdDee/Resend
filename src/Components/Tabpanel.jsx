@@ -8,8 +8,8 @@ const Tabpanel = () => {
   src={TabpanelImage}
   alt="Tabpanel"
   className="
-    max-w-full   // 🔑 ensures it never overflows horizontally
-    h-[250px] sm:h-[350px] md:h-auto
+    max-w-full    
+    h-[230px] sm:h-[350px] md:h-auto
     object-contain
   "
   style={{

@@ -4,6 +4,7 @@ import TrustedCompanies from "../../Components/TrustedCompanies"
 import Integration from "../../Components/Integration"
 import DeveloperExperience from "../../Components/DeveloperExperience"
 import DevelopEmails from "../../Components/DevelopeEmails";
+import Features from "../../Components/Features";
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <Integration />
       <DeveloperExperience />
       <DevelopEmails />
+      <Features />
     </div>
   );
 };

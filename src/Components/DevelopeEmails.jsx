@@ -24,11 +24,11 @@ export default function DevelopEmails() {
       </p>
 
       {/* Buttons */}
-      <div className="flex justify-center space-x-4 mt-8">
-        <button className="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+      <div className="flex justify-center space-x-4 mt-4 md:mt-8">
+        <button className="px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
           Get Started →
         </button>
-        <button className="px-6 py-3 rounded-full border border-gray-700 text-gray-300 font-semibold hover:border-gray-500 transition">
+        <button className="px-3 py-2 rounded-full border border-gray-700 text-gray-300 font-semibold hover:border-gray-500 transition">
           Check the Docs →
         </button>
       </div>
@@ -42,7 +42,7 @@ export default function DevelopEmails() {
       w-full max-w-[1100px] 
       rounded-3xl
       object-contain
-      h-[350px] sm:h-[400px] md:h-auto
+      h-[300px] sm:h-[400px] md:h-auto
     "
   />
 </div>
