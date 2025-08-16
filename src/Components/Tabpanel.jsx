@@ -9,9 +9,12 @@ const Tabpanel = () => {
   alt="Tabpanel"
   className="
     max-w-full    
-    h-[230px] sm:h-[350px] md:h-auto
+    h-[240px] max-[500px]:h-[190px]   sm:h-[350px] md:h-[380px]
     object-contain
+    lg:h-[500px]
   "
+       
+       
   style={{
     transform: "rotate(0deg)",
     opacity: 1,

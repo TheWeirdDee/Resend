@@ -57,24 +57,26 @@ const Features = () => {
       />
 
       {/* Gradient Top Border */}
-      <div
-        className="absolute left-1/2 transform -translate-x-1/2"
-        style={{
-          top: "0.5px",
-          width: "300px",
-          height: "1px",
-          background:
-            "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(143, 143, 143, 0.67) 50%, rgba(0, 0, 0, 0) 100%)",
-        }}
-      ></div>
+<div
+  className="absolute md:mt-8 mt-0 left-1/2 transform -translate-x-1/2"
+  style={{
+    top: "0.5px",
+    height: "1px",
+    width: "90%", // default width for small screens
+    maxWidth: "1600px", // keeps it under control on ultrawide monitors
+    background:
+      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(143,143,143,0.67) 50%, rgba(0,0,0,0) 100%)",
+  }}
+></div>
+
 
       {/* Radial Gradient at center above border */}
       <div
-        className="absolute left-1/2 transform -translate-x-1/2"
+        className="absolute md:mt-2 mt-0 left-1/2 transform -translate-x-1/2"
         style={{
-          top: "-153px",
-          width: "320px",
-          height: "300px",
+          top: "-80px",
+          width: "280px",
+          height: "200px",
           background:
             "radial-gradient(70.71% 70.71% at 50% 50%, rgba(200, 200, 200, 0.1) 0%, rgba(0, 0, 0, 0) 80%)",
         }}
@@ -82,7 +84,7 @@ const Features = () => {
 
       <div className="relative max-w-7xl mx-auto">
         {/* Heading */}
-        <div className="mb-12 text-center lg:text-left">
+        <div className="mb-12 md:mt-0 mt-8 text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Reach humans, <br />
             <span className="text-gray-400">not spam folders</span>
