@@ -58,7 +58,7 @@ const TrustedCompanies = () => {
         </div>
 
         
-        <p className="text-gray-400 text-[14px] leading-[20px] font-[Inter] font-[400] mt-16">
+        <p className="text-gray-400 text-[16px] leading-[20px] font-[Inter] font-[400] mt-16">
           Companies of all sizes trust Resend <br />
           to deliver their most important emails.
         </p>

@@ -11,7 +11,7 @@ export default function DeveloperExperience() {
       <div className="max-w-4xl mx-auto text-center md:text-left md:ml-16 ml-0">
         <h2 className="text-4xl md:text-5xl font-bold">
           First-Class <br />
-          <span className="text-gray-300 font-medium">Developer Experience</span>
+          <span className="text-gray-300 font-medium font-[Inter]">Developer Experience</span>
         </h2>
         <p className="mt-4 text-gray-400 text-lg">
           We are a team of engineers who love building tools for other engineers. <br />

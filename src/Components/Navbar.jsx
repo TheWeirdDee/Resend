@@ -44,7 +44,7 @@ const Navbar = () => {
           <NavLink
             to="/signin"
             className={({ isActive }) =>
-              `text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] align-middle transition ${
+              `text-[hsla(212,87%,97%,0.71)] font-medium text-[16px] leading-[20px] align-middle transition ${
                 isActive ? "text-white" : "hover:text-white"
               }`
             }
@@ -82,7 +82,7 @@ const Navbar = () => {
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `flex items-center justify-center text-center px-4 py-3 text-lg text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] rounded-lg ${
+                `flex items-center justify-center text-center px-4 py-3 text-lg text-[hsla(212,87%,97%,0.71)] font-medium text-[18px] leading-[20px] rounded-lg ${
                   index === 0 ? "mt-2 pt-4" : ""
                 } ${
                   isActive

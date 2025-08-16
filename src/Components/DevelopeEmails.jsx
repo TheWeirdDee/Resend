@@ -15,7 +15,7 @@ export default function DevelopEmails() {
       </div>
 
       {/* Heading */}
-      <h2 className="text-3xl md:text-5xl font-bold mt-6">
+      <h2 className="text-3xl md:text-5xl font-bold mt-6 font-[Inter]">
         Develop emails using React
       </h2>
       <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">

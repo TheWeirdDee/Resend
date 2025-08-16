@@ -24,7 +24,7 @@ const Integration = () => {
           className="mx-auto mb-6 md:max-w-[160px] max-w-[100px]  w-full h-auto object-contain" 
         />
         
-        <h2 className="text-white text-2xl font-semibold mb-3">
+        <h2 className="text-white font-[Inter] text-2xl font-semibold mb-3">
           Integrate{" "}
           <span className="bg-gradient-to-r from-[#FFFF92] to-[#EE8912] bg-clip-text text-transparent">
             This Morning
