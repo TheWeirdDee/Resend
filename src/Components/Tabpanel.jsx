@@ -5,20 +5,19 @@ const Tabpanel = () => {
   return (
     <div className="flex justify-center mt-[24px]">
       <img
-        src={TabpanelImage}
-        alt="Tabpanel"
-        className="
-          w-[98%] max-w-[1024px]    
-          h-auto                    
-          rounded-[26px] 
-          border border-gray-100/40
-          object-contain
-        "
-        style={{
-          transform: "rotate(0deg)",
-          opacity: 1,
-        }}
-      />
+  src={TabpanelImage}
+  alt="Tabpanel"
+  className="
+    max-w-full   // 🔑 ensures it never overflows horizontally
+    h-[250px] sm:h-[350px] md:h-auto
+    object-contain
+  "
+  style={{
+    transform: "rotate(0deg)",
+    opacity: 1,
+  }}
+/>
+
     </div>
   );
 };
