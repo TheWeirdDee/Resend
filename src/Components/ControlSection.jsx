@@ -1,15 +1,14 @@
 import React from "react";
-import TIcon from "../assets/images/ControlSection/TIcon.png";
-import Tablist1 from "../assets/images/ControlSection/Tablist1.png";
-import Tablist2 from "../assets/images/ControlSection/Tablist2.png";
-// import Tablist3 from "../assets/images/ControlSection/Tablist3.png";  // removed since we’re recreating
-import Analytics from "../assets/images/ControlSection/Analytics.png";
-import SmallIcon from "../assets/images/ControlSection/icon.png"; // <-- your small icon for Tablist3
+import TIcon from "../assets/Images/ControlSection/TIcon.png";
+import Tablist1 from "../assets/Images/ControlSection/Tablist1.png";
+import Tablist2 from "../assets/Images/ControlSection/Tablist2.png";
+import Analytics from "../assets/Images/ControlSection/Analytics.png";
+import SmallIcon from "../assets/Images/ControlSection/icon.png";  
 
 const ControlSection = () => {
   return (
     <section className="bg-black text-white py-20 flex flex-col items-center px-4">
-      {/* Top Icon */}
+      
       <div className="mb-6">
         <img 
           src={TIcon} 
@@ -18,7 +17,7 @@ const ControlSection = () => {
         />
       </div>
 
-      {/* Heading */}
+      
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4">
         Everything in your control
       </h2>
@@ -27,10 +26,10 @@ const ControlSection = () => {
         and protect your domain reputation — without the friction.
       </p>
 
-      {/* Three Features */}
+       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 w-full max-w-4xl">
         
-        {/* Recreated Tablist3 */}
+        
         <div className="flex justify-center">
           <div 
   className="flex items-center gap-4 text-left p-2 rounded-2xl bg-black w-full max-w-[300px]"
@@ -46,7 +45,7 @@ const ControlSection = () => {
 
         </div>
 
-        {/* Tablist2 (still image) */}
+         
         <div className="flex justify-center">
           <img 
             src={Tablist2} 
@@ -55,7 +54,7 @@ const ControlSection = () => {
           />
         </div>
 
-        {/* Tablist1 (still image) */}
+         
         <div className="flex justify-center">
           <img 
             src={Tablist1} 
@@ -65,7 +64,7 @@ const ControlSection = () => {
         </div>
       </div>
 
-      {/* Big Image */}
+      
       <div className="w-full flex justify-center">
         <img 
           src={Analytics} 
