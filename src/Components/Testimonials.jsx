@@ -1,6 +1,6 @@
 import React from "react";
-import Lighted from "../assets/images/Testimonials/Lighted.png";
-import Line from "../assets/images/Testimonials/Line.png"; 
+import Lighted from "../assets/Images/Testimonials/Lighted.png";
+import Line from "../assets/Images/Testimonials/Line.png"; 
 import Icon from "../assets/Images/Testimonials/Icon.png";
 import Profile from "../assets/Images/Testimonials/Profile.png";
 
