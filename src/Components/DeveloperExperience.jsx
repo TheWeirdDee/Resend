@@ -1,8 +1,8 @@
 import { FaPaperPlane, FaCheckCircle, FaRegEnvelope, FaWindows } from "react-icons/fa";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { AiFillThunderbolt } from "react-icons/ai";
-import DELeft from "../assets/Images/DELeft.png";
-import DERight from "../assets/Images/DERight.png";
+import DELeft from "../assets/Images/DeveloperExperience/DELeft.png";
+import DERight from "../assets/Images/DeveloperExperience/DERight.png";
 
 export default function DeveloperExperience() {
   return (

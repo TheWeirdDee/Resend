@@ -5,6 +5,8 @@ import Integration from "../../Components/Integration"
 import DeveloperExperience from "../../Components/DeveloperExperience"
 import DevelopEmails from "../../Components/DevelopeEmails";
 import Features from "../../Components/Features";
+import Testimonials from "../../Components/Testimonials";
+import ControlSection from "../../Components/ControlSection";
 const Home = () => {
   return (
     <div>
@@ -14,6 +16,8 @@ const Home = () => {
       <DeveloperExperience />
       <DevelopEmails />
       <Features />
+      <Testimonials />
+      <ControlSection />
     </div>
   );
 };
