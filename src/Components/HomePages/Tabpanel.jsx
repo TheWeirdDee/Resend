@@ -1,5 +1,5 @@
 import React from "react";
-import TabpanelImage from "../assets/Images/Tabpanel.png";
+import TabpanelImage from "../../assets/Images/Tabpanel.png";
 
 const Tabpanel = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import ResendHeroImage from "../assets/Images/ResendHeroImage.png";
-import HeroBg from "../assets/Images/ResendHerobg.png";
+import ResendHeroImage from "../../assets/Images/ResendHeroImage.png";
+import HeroBg from "../../assets/Images/ResendHerobg.png";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 const HeroSection = () => {

@@ -1,8 +1,8 @@
 import { FiMaximize2, FiMinimize2 } from "react-icons/fi";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { MdOutlineContentCopy } from "react-icons/md";
-import ReactIcon from "../assets/Images/DevelopEmails/ReactIcon.png";
-import Tab from "../assets/Images/DevelopEmails/Tab.png";
+import ReactIcon from "../../assets/Images/DevelopEmails/ReactIcon.png";
+import Tab from "../../assets/Images/DevelopEmails/Tab.png";
 
 export default function DevelopEmails() {
   return (
@@ -14,7 +14,7 @@ export default function DevelopEmails() {
         </div>
       </div>
 
-      {/* Heading */}
+       
       <h2 className="text-3xl md:text-5xl font-bold mt-6 font-[Inter]">
         Develop emails using React
       </h2>
@@ -33,7 +33,7 @@ export default function DevelopEmails() {
         </button>
       </div>
 
-     {/* Big Tab Image */}
+      {/* Tab */}
 <div className="flex justify-center mt-0 md:mt-8 mb-6">
   <img
     src={Tab}

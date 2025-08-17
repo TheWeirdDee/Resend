@@ -1,13 +1,13 @@
 import { FaPaperPlane, FaCheckCircle, FaRegEnvelope, FaWindows } from "react-icons/fa";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { AiFillThunderbolt } from "react-icons/ai";
-import DELeft from "../assets/Images/DeveloperExperience/DELeft.png";
-import DERight from "../assets/Images/DeveloperExperience/DERight.png";
+import DELeft from "../../assets/Images/DeveloperExperience/DELeft.png";
+import DERight from "../../assets/Images/DeveloperExperience/DERight.png";
 
 export default function DeveloperExperience() {
   return (
     <section className="bg-black text-white px-6 md:px-16 py-16">
-      {/* Heading */}
+       
       <div className="max-w-4xl mx-auto text-center md:text-left md:ml-16 ml-0">
         <h2 className="text-4xl md:text-5xl font-bold">
           First-Class <br />
@@ -20,13 +20,13 @@ export default function DeveloperExperience() {
         </p>
       </div>
 
-      {/* Cards Section */}
+       
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {/* Test Mode Card */}
+        
         <div className="rounded-2xl p-6 shadow-lg">
           
 
-          {/* Image container with only top/left/right border */}
+           
           <div className="rounded-t-2xl ">
             <img src={DELeft} alt="Test Mode Logs" className="rounded-t-2xl" />
           </div>

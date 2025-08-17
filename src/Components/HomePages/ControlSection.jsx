@@ -1,9 +1,9 @@
 import React from "react";
-import TIcon from "../assets/Images/ControlSection/TIcon.png";
-import Tablist1 from "../assets/Images/ControlSection/Tablist1.png";
-import Tablist2 from "../assets/Images/ControlSection/Tablist2.png";
-import Analytics from "../assets/Images/ControlSection/Analytics.png";
-import SmallIcon from "../assets/Images/ControlSection/icon.png";  
+import TIcon from "../../assets/Images/ControlSection/TIcon.png";
+import Tablist1 from "../../assets/Images/ControlSection/Tablist1.png";
+import Tablist2 from "../../assets/Images/ControlSection/Tablist2.png";
+import Analytics from "../../assets/Images/ControlSection/Analytics.png";
+import SmallIcon from "../../assets/Images/ControlSection/icon.png";  
 
 const ControlSection = () => {
   return (
@@ -18,7 +18,7 @@ const ControlSection = () => {
       </div>
 
       
-      <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4">
+      <h2 className="text-3xl md:text-4xl font-semibold font-[Inter] text-center mb-4">
         Everything in your control
       </h2>
       <p className="text-gray-400 text-center max-w-2xl mb-10 text-sm md:text-base">

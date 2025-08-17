@@ -1,11 +1,11 @@
 import React from "react";
-import BgImage from "../assets/Images/FeatutresImg/bgimgg.png";
-import Icon1 from "../assets/Images/FeatutresImg/svgone.png";
-import Icon2 from "../assets/Images/FeatutresImg/svgtwo.png";
-import Icon3 from "../assets/Images/FeatutresImg/svgthree.png";
-import Icon4 from "../assets/Images/FeatutresImg/svgfour.png";
-import Icon5 from "../assets/Images/FeatutresImg/svgfive.png";
-import Icon6 from "../assets/Images/FeatutresImg/svgsix.png";
+import BgImage from "../../assets/Images/FeatutresImg/bgimgg.png";
+import Icon1 from "../../assets/Images/FeatutresImg/svgone.png";
+import Icon2 from "../../assets/Images/FeatutresImg/svgtwo.png";
+import Icon3 from "../../assets/Images/FeatutresImg/svgthree.png";
+import Icon4 from "../../assets/Images/FeatutresImg/svgfour.png";
+import Icon5 from "../../assets/Images/FeatutresImg/svgfive.png";
+import Icon6 from "../../assets/Images/FeatutresImg/svgsix.png";
 
 const Features = () => {
   const features = [

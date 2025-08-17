@@ -1,8 +1,8 @@
 import React from "react";
-import Lighted from "../assets/Images/Testimonials/Lighted.png";
-import Line from "../assets/Images/Testimonials/Line.png"; 
-import Icon from "../assets/Images/Testimonials/Icon.png";
-import Profile from "../assets/Images/Testimonials/Profile.png";
+import Lighted from "../../assets/Images/Testimonials/Lighted.png";
+import Line from "../../assets/Images/Testimonials/Line.png"; 
+import Icon from "../../assets/Images/Testimonials/Icon.png";
+import Profile from "../../assets/Images/Testimonials/Profile.png";
 
 const Testimonial = () => {
   return (
