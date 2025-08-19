@@ -1,8 +1,12 @@
 import React from 'react'
-
+import AboutHero from "../../Components/AboutPages/AboutHero";
+import OurStory from "../../Components/AboutPages/OurStory";
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <AboutHero />
+      <OurStory />
+    </div>
   )
 }
 
