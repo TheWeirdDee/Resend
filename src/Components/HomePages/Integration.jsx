@@ -21,7 +21,7 @@ const Integration = () => {
         <img 
           src={Integrate} 
           alt="Integrate Banner" 
-          className="mx-auto mb-6 md:max-w-[160px] max-w-[100px]  w-full h-auto object-contain" 
+          className="mx-auto mb-6 w-30 h-30    object-contain" 
         />
         
         <h2 className="text-white font-[Inter] text-2xl font-semibold mb-3">

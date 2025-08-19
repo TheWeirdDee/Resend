@@ -7,7 +7,7 @@ import Tab from "../../assets/Images/DevelopEmails/Tab.png";
 export default function DevelopEmails() {
   return (
     <section className="bg-black text-white px-6 md:px-16 py-0 text-center">
-      {/* Logo */}
+       
       <div className="flex justify-center">
         <div className="p-4 rounded-2xl">
           <img src={ReactIcon} alt="React Logo" className="w-30 h-30" />

@@ -26,7 +26,7 @@ const Testimonial = () => {
         <img 
           src={Icon}  
           alt="Up Arrow Icon" 
-          className="w-16 h-16 object-contain"
+          className="w-30 h-30 object-contain"
         />
       </div>
 

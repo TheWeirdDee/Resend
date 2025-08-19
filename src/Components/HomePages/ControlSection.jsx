@@ -13,7 +13,7 @@ const ControlSection = () => {
         <img 
           src={TIcon} 
           alt="Control Icon" 
-          className="w-20 h-20 object-contain"
+          className="w-30 h-30 object-contain"
         />
       </div>
 

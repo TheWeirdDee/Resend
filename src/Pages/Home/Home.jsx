@@ -8,7 +8,7 @@ import Features from "../../Components/HomePages/Features";
 import Testimonials from "../../Components/HomePages/Testimonials";
 import ControlSection from "../../Components/HomePages/ControlSection";
 import Resend from "../../Components/HomePages/Resend";
-
+import TestimonialCard from "../../Components/HomePages/TestimonialCard";
 const Home = () => {
   return (
     <div className="bg-black text-white">
@@ -31,6 +31,7 @@ const Home = () => {
           stories, empower businesses, and fuel growth across industries and individuals.
         </p>
       </div>
+      <TestimonialCard />
       <Resend />
     </div>
   );
