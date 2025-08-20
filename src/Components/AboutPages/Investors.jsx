@@ -90,10 +90,10 @@ const InvestorsSection = () => {
             <img
               src={inv.img}
               alt={inv.name}
-              className="w-16 h-16 rounded-full object-cover"
+              className="w-12 h-12 bg-gray-400 rounded-full object-cover"
             />
             <div>
-              <h3 className="font-medium">{inv.name}</h3>
+              <h3 className="font-md">{inv.name}</h3>
               <p className="text-gray-400 text-sm">{inv.title}</p>
             </div>
           </div>
