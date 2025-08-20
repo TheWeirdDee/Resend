@@ -36,7 +36,7 @@ const BlogSection = () => {
             <img
               src={post.image}
               alt={post.title}
-              className="w-[390px] md:w-[325px] h-[200px] md:h-[171px] object-cover flex justify-center items-center"
+              className="w-[390px] max-[500px]:w-[310px] md:w-[325px] h-[200px] md:h-[171px] object-cover flex justify-center items-center"
             />
             <div className="mt-3 mb-6">
               <h3 className="text-base md:text-lg font-medium mt-5">{post.title}</h3>
