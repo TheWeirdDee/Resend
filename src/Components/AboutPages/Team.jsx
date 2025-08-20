@@ -14,10 +14,10 @@ export default function Teams() {
 
        
       <div className="flex justify-center mt-0 md:mt-8 mb-6">
-        <img
+       <img
           src={Team}
           alt="Team Image"
-          className="w-full max-w-[800px] rounded-3xl object-contain h-[270px] sm:h-[400px] md:h-auto"
+          className="w-full max-w-[800px] rounded-3xl object-contain h-[300px] sm:h-[400px] max-[500px]:h-[220px]  md:h-auto"
         />
       </div>
 

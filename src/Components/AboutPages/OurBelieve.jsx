@@ -73,12 +73,12 @@ export default function Beliefs() {
           return (
             <div
               key={belief.id}
-              className={`relative w-full max-w-3xl lg:h-[600px] md:h-[500px] h-[400px] rounded-2xl p-[2px] ${
+              className={`relative w-full max-w-3xl lg:h-[500px] md:h-[500px] h-[400px] rounded-2xl p-[2px] ${
                 idx === 1 ? "md:-mt-26 -mt-20 max-[500px]:mt-[10px]" : "" 
               } ${
-                idx === 2 ? "-mt-36 md:-mt-65 max-[500px]:mt-[-100px] ml-8 md:ml-80 z-20" : ""  
+                idx === 2 ? "-mt-36 md:-mt-35 lg:-mt-45 max-[500px]:mt-[-100px] ml-8 md:ml-10 lg:ml-80 z-20" : ""  
               } ${
-                idx === 3 ? "md:-mt-36 -mt-20 max-[500px]:mt-[0px] z-20 relative" : "" 
+                idx === 3 ? "md:-mt-36 -mt-20 max-[500px]:mt-[-100px]  z-20 relative" : "" 
               }`}
               style={{
                 background:
