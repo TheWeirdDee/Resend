@@ -47,15 +47,15 @@ const beliefs = [
 ];
 
 const cardConfig = [
-  { rotate: "2deg", minH: "441.78px", bg: Bluebg },
-  { rotate: "-2deg", minH: "412.98px", bg: Bluebg },
-  { rotate: "2deg", minH: "384.19px", bg: Greenbg },
-  { rotate: "2deg", minH: "412.98px", bg: Greenbg },
+  { rotate: "2deg", minH: "400px", bg: Bluebg },
+  { rotate: "-2deg", minH: "390px", bg: Bluebg },
+  { rotate: "2deg", minH: "350px", bg: Greenbg },
+  { rotate: "2deg", minH: "340px", bg: Greenbg },
 ];
 
 export default function Beliefs() {
   return (
-    <section className="text-white px-6 md:px-1">
+    <section className="text-white px-6 md:px-16">
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-5xl pt-20 font-bold font-[Inter]">
@@ -67,15 +67,19 @@ export default function Beliefs() {
       </div>
 
       {/* Cards */}
-      <div className="mt-2 flex flex-col items-center relative">
+      <div className="mt-8 flex flex-col items-center relative">
         {beliefs.map((belief, idx) => {
           const cfg = cardConfig[idx] || cardConfig[cardConfig.length - 1];
           return (
             <div
               key={belief.id}
-              className={`relative w-full max-w-2xl rounded-2xl p-[2px] ${
-                idx === 2 ? "-mt-20 z-20" : "mt-8"
-              }`} // 👈 card 3 overlaps card 2
+              className={`relative w-full max-w-3xl lg:h-[600px] md:h-[500px] h-[400px] rounded-2xl p-[2px] ${
+                idx === 1 ? "md:-mt-26 -mt-0" : "" 
+              } ${
+                idx === 2 ? "-mt-26 md:-mt-65 ml-8 md:ml-80 z-20" : ""  
+              } ${
+                idx === 3 ? "md:-mt-36 mt-2 z-20 relative md:bottom-0 bottom-16" : "" 
+              }`}
               style={{
                 background:
                   "linear-gradient(0deg, #000000 25%, rgba(255, 255, 255, 0.15) 100%)",
@@ -106,26 +110,26 @@ export default function Beliefs() {
                 </div>
 
                 {/* Divider */}
-                <div className="border-b border-[hsla(0,0%,100%,0.05)] mb-4"></div>
+                <div className="border-b border-[hsla(0,0%,100%,0.05)] mb-0 md:mb-10"></div>
 
                 {/* Author */}
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-2 mb-3 md:mb-6">
                   <img
                     src={belief.avatar}
                     alt={belief.name}
                     className="w-6 h-6 rounded-full"
                   />
-                  <p className="text-sm text-gray-300">
+                  <p className="text-xl text-gray-300">
                     {belief.name}{" "}
                     <span className="text-gray-500">&lt;{belief.email}&gt;</span>
                   </p>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold mb-2">{belief.title}</h3>
+                <h3 className="text-3xl font-bold mb-2">{belief.title}</h3>
 
                 {/* Text */}
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <p className="text-gray-300 md:text-xl text-md leading-relaxed">
                   {belief.text}
                 </p>
               </div>
