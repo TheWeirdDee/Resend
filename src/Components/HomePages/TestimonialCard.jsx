@@ -81,41 +81,56 @@ const TestimonialsCarousel = () => {
         }`}
       >
         {[...testimonials, ...testimonials].map((t, index) => (
-         <div
-  className={`flex space-x-4 animate-scroll ${inView ? "running" : "paused"}`}
+          <div
+  key={index}
+  className="relative flex-shrink-0 w-[350px] text-white rounded-t-3xl overflow-hidden p-6"
 >
-  {[...testimonials, ...testimonials].map((t, index) => (
-    <div
-      key={index}
-      className="rounded-2xl p-4 w-[350px] flex-shrink-0 text-white"
-    >
-      {/* fixed-width text block */}
-      <div className="bg-white/10 backdrop-blur-xl shadow-3xl border-t border-l border-r border-white/20 rounded-t-2xl px-4 py-6 mb-4 w-full h-[160px] flex items-center">
-        <p className="text-gray-200 text-sm leading-relaxed">"{t.text}"</p>
-      </div>
+   
+  <span
+    className="pointer-events-none absolute inset-x-0 top-0 h-[2px] rounded-t-3xl"
+    style={{
+      background:
+        "linear-gradient(0deg, #000000 25%, rgba(255, 255, 255, 0.15) 100%)",
+    }}
+  />
+  <span
+    className="pointer-events-none absolute left-0 top-0 h-full w-[2px] rounded-tl-3xl"
+    style={{
+      background:
+        "linear-gradient(0deg, #000000 25%, rgba(255, 255, 255, 0.15) 100%)",
+    }}
+  />
+  <span
+    className="pointer-events-none absolute right-0 top-0 h-full w-[2px] rounded-tr-3xl"
+    style={{
+      background:
+        "linear-gradient(0deg, #000000 25%, rgba(255, 255, 255, 0.15) 100%)",
+    }}
+  />
 
-      {/* profile + logo block */}
-      <div className="flex items-center gap-2">
-        <img
-          src={t.logo}
-          alt="logo"
-          className="w-8 h-8 rounded-full object-contain"
-        />
-        <img
-          src={t.img}
-          alt={t.name}
-          className="w-10 h-10 rounded-full object-cover -ml-3"
-        />
-        <div>
-          <p className="font-semibold">{t.name}</p>
-          <p className="text-sm text-gray-300">{t.role}</p>
-        </div>
+   
+  <div className="space-y-4">
+    <p className="text-gray-200 text-sm leading-relaxed">"{t.text}"</p>
+
+    <div className="flex items-center gap-2">
+      <img
+        src={t.logo}
+        alt="logo"
+        className="w-8 h-8 rounded-full object-contain"
+      />
+      <img
+        src={t.img}
+        alt={t.name}
+        className="w-10 h-10 rounded-full object-cover -ml-3"
+      />
+      <div>
+        <p className="font-semibold">{t.name}</p>
+        <p className="text-sm text-gray-300">{t.role}</p>
       </div>
     </div>
-  ))}
+  </div>
 </div>
 
-               
         ))}
       </div>
 

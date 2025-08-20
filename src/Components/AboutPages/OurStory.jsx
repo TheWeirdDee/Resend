@@ -2,9 +2,9 @@ import React from "react";
 import Light from "../../assets/Images/About/Light.png";
 import Line from "../../assets/Images/About/Line.png";
 
-const AboutHero = () => {
+const OurStory = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 text-center mb-5">
+    <div className="max-w-6xl mx-auto px-4 text-center mb-30">
        
       <div className="relative w-40 h-40 mx-auto">
         <img
@@ -48,4 +48,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default OurStory;
