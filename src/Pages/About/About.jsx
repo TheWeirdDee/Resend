@@ -4,6 +4,7 @@ import OurStory from "../../Components/AboutPages/OurStory";
 import Team from "../../Components/AboutPages/Team";
 import OurBelieve from "../../Components/AboutPages/OurBelieve";
 import Investors from "../../Components/AboutPages/Investors";
+import Hiring from "../../Components/AboutPages/Hiring";
 const About = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const About = () => {
       <OurStory />
       <Team />
       <OurBelieve />
+      <Hiring/>
       <Investors />
     </div>
   )
