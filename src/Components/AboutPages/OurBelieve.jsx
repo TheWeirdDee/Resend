@@ -56,7 +56,7 @@ const cardConfig = [
 export default function Beliefs() {
   return (
     <section className="text-white px-6 md:px-16">
-      {/* Heading */}
+      
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-5xl pt-20 font-bold font-[Inter]">
           What we believe
@@ -74,11 +74,11 @@ export default function Beliefs() {
             <div
               key={belief.id}
               className={`relative w-full max-w-3xl lg:h-[600px] md:h-[500px] h-[400px] rounded-2xl p-[2px] ${
-                idx === 1 ? "md:-mt-26 -mt-0" : "" 
+                idx === 1 ? "md:-mt-26 -mt-20 max-[500px]:mt-[10px]" : "" 
               } ${
-                idx === 2 ? "-mt-26 md:-mt-65 ml-8 md:ml-80 z-20" : ""  
+                idx === 2 ? "-mt-36 md:-mt-65 max-[500px]:mt-[-100px] ml-8 md:ml-80 z-20" : ""  
               } ${
-                idx === 3 ? "md:-mt-36 mt-2 z-20 relative md:bottom-0 bottom-16" : "" 
+                idx === 3 ? "md:-mt-36 -mt-20 max-[500px]:mt-[0px] z-20 relative" : "" 
               }`}
               style={{
                 background:
@@ -96,7 +96,7 @@ export default function Beliefs() {
                   backgroundSize: "cover",
                 }}
               >
-                {/* Top bar */}
+               
                 <div className="flex justify-between items-center text-gray-500 text-xs mb-4">
                   <div className="flex gap-2">
                     <span className="w-2 h-2 border border-gray-500 rounded-full"></span>
@@ -109,27 +109,27 @@ export default function Beliefs() {
                   </div>
                 </div>
 
-                {/* Divider */}
+                 
                 <div className="border-b border-[hsla(0,0%,100%,0.05)] mb-0 md:mb-10"></div>
 
-                {/* Author */}
-                <div className="flex items-center gap-2 mb-3 md:mb-6">
+                
+                <div className="flex items-center gap-2 mb-3  mt-4 md:mb-6">
                   <img
                     src={belief.avatar}
                     alt={belief.name}
                     className="w-6 h-6 rounded-full"
                   />
-                  <p className="text-xl text-gray-300">
+                  <p className="md:text-xl text:md text-gray-300">
                     {belief.name}{" "}
                     <span className="text-gray-500">&lt;{belief.email}&gt;</span>
                   </p>
                 </div>
 
-                {/* Title */}
-                <h3 className="text-3xl font-bold mb-2">{belief.title}</h3>
+               
+                <h3 className="text-2xl md:text-3xl font-bold mb-2">{belief.title}</h3>
 
-                {/* Text */}
-                <p className="text-gray-300 md:text-xl text-md leading-relaxed">
+                 
+                <p className="text-gray-300 md:text-xl text-sm leading-relaxed">
                   {belief.text}
                 </p>
               </div>

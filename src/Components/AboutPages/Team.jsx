@@ -17,7 +17,7 @@ export default function Teams() {
         <img
           src={Team}
           alt="Team Image"
-          className="w-full max-w-[800px] rounded-3xl object-contain h-[300px] sm:h-[400px] md:h-auto"
+          className="w-full max-w-[800px] rounded-3xl object-contain h-[270px] sm:h-[400px] md:h-auto"
         />
       </div>
 
