@@ -18,8 +18,11 @@ const Navbar = () => {
   return (
     <nav className="w-full h-16 bg-black text-white font-[Inter] fixed z-40">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-        
-        <NavLink to="/" className="text-white font-semibold text-lg">
+        <NavLink
+          to="/"
+          className="text-2xl font-semibold bg-gradient-to-br from-white to-gray-400 bg-clip-text text-transparent inline-block"
+          style={{ transform: "skewX(-10deg)" }}
+        >
           Resend
         </NavLink>
 
@@ -30,7 +33,7 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `text-[hsla(212,87%,97%,0.71)] font-medium text-[14px] leading-[20px] tracking-[0%] align-middle transition ${
+                `text-[hsla(212,87%,97%,0.71)] font-medium text-[15px] leading-[20px] tracking-[0%] align-middle transition ${
                   isActive ? "text-white" : "hover:text-white"
                 }`
               }
@@ -39,7 +42,7 @@ const Navbar = () => {
             </NavLink>
           ))}
         </div>
- 
+
         <div className="flex items-center space-x-4 text-md">
           <NavLink
             to="/signin"
@@ -82,7 +85,7 @@ const Navbar = () => {
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
-                `flex items-center justify-center text-center px-4 py-3 text-lg text-[hsla(212,87%,97%,0.71)] font-medium text-[18px] leading-[20px] rounded-lg ${
+                `flex items-center justify-left text-left px-4 py-3 text-lg text-[hsla(212,87%,97%,0.71)] font-medium text-[18px] leading-[20px] rounded-lg ${
                   index === 0 ? "mt-2 pt-4" : ""
                 } ${
                   isActive

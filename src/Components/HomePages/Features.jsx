@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import BgImage from "../../assets/Images/FeatutresImg/bgimgg.png";
 import Icon1 from "../../assets/Images/FeatutresImg/svgone.png";
 import Icon2 from "../../assets/Images/FeatutresImg/svgtwo.png";
@@ -8,6 +11,10 @@ import Icon5 from "../../assets/Images/FeatutresImg/svgfive.png";
 import Icon6 from "../../assets/Images/FeatutresImg/svgsix.png";
 
 const Features = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800, once: true, easing: "ease-out-cubic" });
+  }, []);
+
   const features = [
     {
       icon: Icon1,
@@ -48,7 +55,7 @@ const Features = () => {
   ];
 
   return (
-    <section className="relative  text-white px-6 py-16 md:px-12 lg:px-20 overflow-hidden">
+    <section className="relative text-white px-6 py-16 md:px-12 lg:px-20 overflow-hidden">
       
       <img
         src={BgImage}
@@ -56,21 +63,20 @@ const Features = () => {
         className="absolute w-full h-full object-cover"
       />
 
-      {/* Gradient Top Border */}
-<div
-  className="absolute md:mt-8 mt-0 left-1/2 transform -translate-x-1/2"
-  style={{
-    top: "0.5px",
-    height: "1px",
-    width: "90%",  
-    maxWidth: "1600px",  
-    background:
-      "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(143,143,143,0.67) 50%, rgba(0,0,0,0) 100%)",
-  }}
-></div>
+       
+      <div
+        className="absolute md:mt-8 mt-0 left-1/2 transform -translate-x-1/2"
+        style={{
+          top: "0.5px",
+          height: "1px",
+          width: "90%",
+          maxWidth: "1600px",
+          background:
+            "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(143,143,143,0.67) 50%, rgba(0,0,0,0) 100%)",
+        }}
+      ></div>
 
-
-      {/* Radial Gradient  */}
+       
       <div
         className="absolute md:mt-2 mt-0 left-1/2 transform -translate-x-1/2"
         style={{
@@ -83,7 +89,6 @@ const Features = () => {
       ></div>
 
       <div className="relative max-w-7xl mx-auto">
-        
         <div className="mb-12 md:mt-0 mt-8 text-center lg:text-left">
           <h2 className="text-3xl md:text-4xl font-bold leading-tight font-[Inter]">
             Reach humans, <br />
@@ -91,11 +96,13 @@ const Features = () => {
           </h2>
         </div>
 
-        {/* Features */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {features.map((feature, index) => (
             <div
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 900}  
               className="flex flex-col items-start text-left hover:scale-105 transition-transform duration-300"
             >
               <img
@@ -103,8 +110,12 @@ const Features = () => {
                 alt={feature.title}
                 className="w-6 h-6 object-contain mb-4"
               />
-              <h3 className="text-lg font-semibold font-[Inter]">{feature.title}</h3>
-              <p className="mt-2 text-sm text-gray-400">{feature.description}</p>
+              <h3 className="text-lg font-semibold font-[Inter]">
+                {feature.title}
+              </h3>
+              <p className="mt-2 text-sm text-gray-400">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

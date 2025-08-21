@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Ali from "../../assets/Images/About/Investors/Ali.png";
 import Alana from "../../assets/Images/About/Investors/Alana.png";
 import Ahmad from "../../assets/Images/About/Investors/Ahmad.png";
@@ -67,14 +68,23 @@ const investors = [
   { name: "Yoko Li", title: "Partner at a16z", img: Yoko },
 ];
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" },
+  }),
+};
+
 const InvestorsSection = () => {
   return (
     <section className="bg-black text-white py-20 px-6 md:px-12 lg:px-20 relative bottom-16">
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4 flex items-center space-x-4 text-left font-[Inter]">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-left font-[Inter]">
           Backed By Incredible Investors
         </h2>
-        <p className="text-gray-400 text-lg flex items-center space-x-4 text-left">
+        <p className="text-gray-400 text-lg text-left">
           We are fortunate to work with some of the best investors in the world.
           <br />
           Chances are you are already using the products they helped to create.
@@ -83,9 +93,13 @@ const InvestorsSection = () => {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-8 max-w-6xl mx-auto">
         {investors.map((inv, index) => (
-          <div
+          <motion.div
             key={index}
             className="flex items-center space-x-4 text-left"
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+            custom={index}
           >
             <img
               src={inv.img}
@@ -96,7 +110,7 @@ const InvestorsSection = () => {
               <h3 className="font-md">{inv.name}</h3>
               <p className="text-gray-400 text-sm">{inv.title}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
