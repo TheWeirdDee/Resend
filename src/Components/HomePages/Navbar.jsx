@@ -21,7 +21,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className="text-2xl font-semibold bg-gradient-to-br from-white to-gray-400 bg-clip-text text-transparent inline-block"
-          style={{ transform: "skewX(-10deg)" }}
+          // style={{ transform: "skewX(-10deg)" }}
         >
           Resend
         </NavLink>
