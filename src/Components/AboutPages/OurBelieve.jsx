@@ -1,6 +1,6 @@
 import React from "react";
 import Zeno from "../../assets/Images/About/OurBelieve/Zeno.png";
-import Jermi from "../../assets/Images/About/OurBelieve/Jonni.png";
+import Jonni from "../../assets/Images/About/OurBelieve/Jonni.png";
 import Bu from "../../assets/Images/About/OurBelieve/Bu.png";
 import Zeh from "../../assets/Images/About/OurBelieve/Zeh.png";
 import { Calendar } from "lucide-react";
@@ -21,7 +21,7 @@ const beliefs = [
     id: 2,
     name: "Jermi Lundy",
     email: "jermi@resend.com",
-    avatar: Jermi,
+    avatar: Jonni,
     date: "Jan 3rd, 2023",
     title: "No ego",
     text: `Helping others is part of the job. It’s okay to admit you don’t know something and ask for help - it’s a sign of strength, not weakness. We work together as an async team and assume positive intent. We communicate in a transparent way.`,

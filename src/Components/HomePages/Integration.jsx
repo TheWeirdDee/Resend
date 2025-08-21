@@ -1,16 +1,16 @@
 import React from "react";
 import Tabpanel from "../../Components/HomePages/Tabpanel"
-import Go from "../../assets/Images/IntegrationImg/Go.png";
-import Java from "../../assets/Images/IntegrationImg/Java.png";
-import Node from "../../assets/Images/IntegrationImg/Node.png";
-import Php from "../../assets/Images/IntegrationImg/Php.png";
-import Python from "../../assets/Images/IntegrationImg/Python.png";
-import Rest from "../../assets/Images/IntegrationImg/Rest.png";
-import Ruby from "../../assets/Images/IntegrationImg/Ruby.png";
-import Elixir from "../../assets/Images/IntegrationImg/Elixir.png";
-import Serverless from "../../assets/Images/IntegrationImg/Serverless.png";
-import Smtp from "../../assets/Images/IntegrationImg/Smtp.png";
-import Integrate from "../../assets/Images/IntegrationImg/Integrate.png";
+import Go from "../../assets/Images/Home/IntegrationImg/Go.png";
+import Java from "../../assets/Images/Home/IntegrationImg/Java.png";
+import Node from "../../assets/Images/Home/IntegrationImg/Node.png";
+import Php from "../../assets/Images/Home/IntegrationImg/Php.png";
+import Python from "../../assets/Images/Home/IntegrationImg/Python.png";
+import Rest from "../../assets/Images/Home/IntegrationImg/Rest.png";
+import Ruby from "../../assets/Images/Home/IntegrationImg/Ruby.png";
+import Elixir from "../../assets/Images/Home/IntegrationImg/Elixir.png";
+import Serverless from "../../assets/Images/Home/IntegrationImg/Serverless.png";
+import Smtp from "../../assets/Images/Home/IntegrationImg/Smtp.png";
+import Integrate from "../../assets/Images/Home/IntegrationImg/Integrate.png";
 
 const Integration = () => {
   return (

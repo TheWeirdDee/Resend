@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import BgImage from "../../assets/Images/FeatutresImg/bgimgg.png";
-import Icon1 from "../../assets/Images/FeatutresImg/svgone.png";
-import Icon2 from "../../assets/Images/FeatutresImg/svgtwo.png";
-import Icon3 from "../../assets/Images/FeatutresImg/svgthree.png";
-import Icon4 from "../../assets/Images/FeatutresImg/svgfour.png";
-import Icon5 from "../../assets/Images/FeatutresImg/svgfive.png";
-import Icon6 from "../../assets/Images/FeatutresImg/svgsix.png";
+import BgImage from "../../assets/Images/Home/FeatutresImg/bgimgg.png";
+import Icon1 from "../../assets/Images/Home/FeatutresImg/svgone.png";
+import Icon2 from "../../assets/Images/Home/FeatutresImg/svgtwo.png";
+import Icon3 from "../../assets/Images/Home/FeatutresImg/svgthree.png";
+import Icon4 from "../../assets/Images/Home/FeatutresImg/svgfour.png";
+import Icon5 from "../../assets/Images/Home/FeatutresImg/svgfive.png";
+import Icon6 from "../../assets/Images/Home/FeatutresImg/svgsix.png";
 
 const Features = () => {
   useEffect(() => {

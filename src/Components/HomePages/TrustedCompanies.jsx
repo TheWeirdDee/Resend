@@ -2,24 +2,24 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import warner from "../../assets/Images/TrustedCompanies/Warner.png";
-import fey from "../../assets/Images/TrustedCompanies/Fey.png";
-import anghami from "../../assets/Images/TrustedCompanies/Anghami.png";
-import mintlify from "../../assets/Images/TrustedCompanies/Mintlify.png";
-import Payload from "../../assets/Images/TrustedCompanies/Payload.png";
-import liveblocks from "../../assets/Images/TrustedCompanies/Liveblocks.png";
-import shepherd from "../../assets/Images/TrustedCompanies/Shepherd.png";
-import infisical from "../../assets/Images/TrustedCompanies/Infisical.png";
-import leap from "../../assets/Images/TrustedCompanies/Leap.png";
-import chatbase from "../../assets/Images/TrustedCompanies/Chatbase.png";
-import craiyon from "../../assets/Images/TrustedCompanies/Craiyon.png";
-import guruhotel from "../../assets/Images/TrustedCompanies/Guru.png";
+import warner from "../../assets/Images/Home/TrustedCompanies/Warner.png";
+import fey from "../../assets/Images/Home/TrustedCompanies/Fey.png";
+import anghami from "../../assets/Images/Home/TrustedCompanies/Anghami.png";
+import mintlify from "../../assets/Images/Home/TrustedCompanies/Mintlify.png";
+import Payload from "../../assets/Images/Home/TrustedCompanies/Payload.png";
+import liveblocks from "../../assets/Images/Home/TrustedCompanies/Liveblocks.png";
+import shepherd from "../../assets/Images/Home/TrustedCompanies/Shepherd.png";
+import infisical from "../../assets/Images/Home/TrustedCompanies/Infisical.png";
+import leap from "../../assets/Images/Home/TrustedCompanies/Leap.png";
+import chatbase from "../../assets/Images/Home/TrustedCompanies/Chatbase.png";
+import craiyon from "../../assets/Images/Home/TrustedCompanies/Craiyon.png";
+import guruhotel from "../../assets/Images/Home/TrustedCompanies/Guru.png";
 
 const TrustedCompanies = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // animation speed
-      once: true, // only animate once
+      duration: 800,  
+      once: true,  
       easing: "ease-in-out",
     });
   }, []);

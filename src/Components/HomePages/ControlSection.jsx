@@ -1,9 +1,9 @@
 import React from "react";
-import TIcon from "../../assets/Images/ControlSection/TIcon.png";
-import Tablist1 from "../../assets/Images/ControlSection/Tablist1.png";
-import Tablist2 from "../../assets/Images/ControlSection/Tablist2.png";
-import Analytics from "../../assets/Images/ControlSection/Analytics.png";
-import SmallIcon from "../../assets/Images/ControlSection/icon.png";  
+import TIcon from "../../assets/Images/Home/ControlSection/TIcon.png";
+import Tablist1 from "../../assets/Images/Home/ControlSection/Tablist1.png";
+import Tablist2 from "../../assets/Images/Home/ControlSection/Tablist2.png";
+import Analytics from "../../assets/Images/Home/ControlSection/Analytics.png";
+import SmallIcon from "../../assets/Images/Home/ControlSection/icon.png";  
 
 const ControlSection = () => {
   return (

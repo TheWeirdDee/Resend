@@ -1,5 +1,5 @@
-import DELeft from "../../assets/Images/DeveloperExperience/DELeft.png";
-import DERight from "../../assets/Images/DeveloperExperience/DERight.png";
+import DELeft from "../../assets/Images/Home/DeveloperExperience/DELeft.png";
+import DERight from "../../assets/Images/Home/DeveloperExperience/DERight.png";
 
 export default function DeveloperExperience() {
   return (

@@ -1,8 +1,8 @@
 import { FiMaximize2, FiMinimize2 } from "react-icons/fi";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { MdOutlineContentCopy } from "react-icons/md";
-import ReactIcon from "../../assets/Images/DevelopEmails/ReactIcon.png";
-import Tab from "../../assets/Images/DevelopEmails/Tab.png";
+import ReactIcon from "../../assets/Images/Home/DevelopEmails/ReactIcon.png";
+import Tab from "../../assets/Images/Home/DevelopEmails/Tab.png";
 
 export default function DevelopEmails() {
   return (

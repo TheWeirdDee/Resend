@@ -4,7 +4,8 @@ import Navbar from "./Components/HomePages/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import ScrollToTop from "./Components/ScrollToTop"; // 👈 import it
+import Blog from "./Pages/Blog/Blog";
+import ScrollToTop from "./Components/ScrollToTop";  
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+         <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </BrowserRouter>

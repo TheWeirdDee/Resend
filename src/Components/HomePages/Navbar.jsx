@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);  
 
   const navLinks = [
     { name: "About", path: "/about" },
@@ -15,13 +16,31 @@ const Navbar = () => {
     { name: "Docs", path: "/docs" },
   ];
 
+  
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
   return (
     <nav className="w-full h-16 bg-black text-white font-[Inter] fixed z-40">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <NavLink
           to="/"
           className="text-2xl font-semibold bg-gradient-to-br from-white to-gray-400 bg-clip-text text-transparent inline-block"
-          // style={{ transform: "skewX(-10deg)" }}
         >
           Resend
         </NavLink>
@@ -43,6 +62,7 @@ const Navbar = () => {
           ))}
         </div>
 
+        
         <div className="flex items-center space-x-4 text-md">
           <NavLink
             to="/signin"
@@ -61,6 +81,7 @@ const Navbar = () => {
             Get Started <span className="ml-1">›</span>
           </NavLink>
 
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? (
@@ -73,7 +94,9 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Nav */}
       <div
+        ref={navRef}  
         className={`fixed top-[50px] left-0 w-full bg-black shadow-md overflow-hidden transition-all duration-500 ease-in-out z-40 ${
           isOpen ? "max-h-[500px]" : "max-h-0"
         }`}
@@ -89,8 +112,8 @@ const Navbar = () => {
                   index === 0 ? "mt-2 pt-4" : ""
                 } ${
                   isActive
-                    ? "bg-[hsla(212,87%,97%,0.71)] text-white"
-                    : "text-[hsla(212,87%,97%,0.71)] hover:text-purple-200"
+                    ? "bg-[hsla(214,11%,13%,1)] text-white"
+                    : "text-[hsla(212,87%,97%,0.71)] hover:text-gray-500"
                 }`
               }
             >
