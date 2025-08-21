@@ -1,6 +1,7 @@
 @import "tailwindcss";
-html{
-    background: black;
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: black;
 }
 html, body {
   overflow-x: hidden;
