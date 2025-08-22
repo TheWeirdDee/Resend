@@ -6,7 +6,7 @@ const BlogCard = ({ image, category, title, authorImg, authorName, date }) => {
       <img src={image} alt={title} className="w-full h-48 object-cover border border-[hsla(208,91%,92%,0.19)]" />
       <div className="p-4">
         <span className="text-xs text-gray-400 uppercase">{category}</span>
-        <h3 className="mt-2 text-lg font-semibold text-white">{title}</h3>
+        <h3 className="mt-2 text-lg font-semibold text-white font-[Inter]">{title}</h3>
         <div className="flex items-center mt-3 text-gray-400 text-sm">
           <img
             src={authorImg}
