@@ -22,8 +22,8 @@ function Tab({ label, active = false }) {
 
 export default function EmailPreview() {
   return (
-    <div className="px-4 py-10 bg-black min-h-screen text-neutral-100">
-      <div className="mx-auto max-w-[720px]">
+    <div className="px-4 mb-6 bg-black min-h-screen text-neutral-100">
+      <div className="mx-auto max-w-[520px]">
 
         {/* Window */}
         <div className="rounded-[28px] border border-neutral-800 bg-neutral-950 shadow-[0_20px_80px_rgba(0,0,0,0.6)] overflow-hidden">
@@ -51,28 +51,28 @@ export default function EmailPreview() {
           </div>
 
           {/* Content container (email preview card) */}
-          <div className="p-6 sm:p-8">
-            <div className="relative rounded-[24px]  p-6 sm:p-8 ">
+          <div className="p-6">
+            <div className="relative rounded-[24px] right-5 w-[400px] p-6">
 
               {/* top radial glow */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-x-6 top-0 h-44 rounded-t-[24px] no-scrollbar  border-t border-neutral-800
-                           bg-[radial-gradient(ellipse_at_top,_rgba(56,189,248,0.16),transparent_60%)]" />
+                className="pointer-events-none absolute inset-x-6 top-0 h-44 rounded-t-[24px] no-scrollbar   
+                           bg-[radial-gradient(ellipse_at_top,_rgba(56,189,248,0.12),transparent_60%)]" />
 
               {/* blue disc icon */}
-               <img src={EmailPreviewImg} alt="EmailPreviewImg" className="h-20 w-20 object-contain item-center mx-auto" />
+               <img src={EmailPreviewImg} alt="EmailPreviewImg" className="h-16 w-16 object-contain item-center mx-auto" />
 
               {/* title */}
-              <h1 className="text-center text-3xl sm:text-4xl leading-tight font-medium">
+              <h1 className="text-center text-2xl sm:text-3xl leading-tight font-medium mt-3">
                 Welcome to <span className="font-bold">ACME</span>,<br className="sm:hidden" /> user!
               </h1>
 
               {/* body */}
-              <div className="mx-auto mt-8 max-w-[40rem] text-neutral-300">
+              <div className="mx-auto mt-8 max-w-[40rem] text-neutral-300 item-center text-left">
                 <p className="mb-6">Hello Steve,</p>
 
-                <p className="leading-7">
+                <p className="leading-7 item-center text-left">
                   We&apos;re excited to have you onboard at <span className="font-semibold">ACME</span>.
                   We hope you enjoy your journey with us. If you have any questions or need
                   assistance, feel free to reach out.
@@ -80,9 +80,9 @@ export default function EmailPreview() {
               </div>
 
               {/* CTA */}
-              <div className="mt-10 flex justify-center">
+              <div className="mt-8 flex justify-center">
                 <button
-                  className="rounded-xl px-6 py-3 text-base font-semibold text-white
+                  className="rounded-xl px-4 py-2 text-base font-semibold text-white
                              bg-sky-500 hover:bg-sky-600 active:bg-sky-700
                              focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60
                              transition"
@@ -92,8 +92,7 @@ export default function EmailPreview() {
                 </button>
               </div>
 
-              {/* rounded corner mask spacing */}
-              <div className="mt-6" />
+              
             </div>
           </div>
         </div>
