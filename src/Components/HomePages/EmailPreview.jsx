@@ -8,25 +8,28 @@ function Tab({ label, active = false }) {
       className={[
         'flex items-center gap-2 px-3 py-1.5 rounded-md border flex-shrink-0',
         active
-          ? '  text-sky-400 border-none'
-          : '  text-neutral-400 border-none'
+          ? 'text-sky-400 border-none'
+          : 'text-neutral-400 border-none'
       ].join(' ')}
       role="tab"
       aria-selected={active}
     >
       <img src={tsIcon} alt="TypeScript" className="h-4 w-4 object-contain" />
-      <span className={active ? 'text-sky-400' : 'text-neutral-300/80'}>{label}</span>
+      <span className={active ? 'text-sky-400' : 'text-neutral-300/80'}>
+        {label}
+      </span>
     </div>
   )
 }
 
 export default function EmailPreview() {
   return (
-    <div className="px-4 mb-6 bg-black min-h-screen text-neutral-100">
-      <div className="mx-auto max-w-[520px]">
+    <div className="px-4 py-8 bg-black min-h-screen flex justify-center items-center text-neutral-100">
+      <div className="w-full max-w-[520px]">
 
         {/* Window */}
-        <div className="rounded-[28px] border border-neutral-800 bg-neutral-950 shadow-[0_20px_80px_rgba(0,0,0,0.6)] overflow-hidden">
+        <div className="rounded-[28px] border border-neutral-800 bg-neutral-950 
+                        shadow-[0_20px_80px_rgba(0,0,0,0.6)] overflow-hidden">
 
           {/* Top chrome */}
           <div className="px-4 pt-4">
@@ -41,27 +44,33 @@ export default function EmailPreview() {
           </div>
 
           {/* Tabs */}
-          <div className="mt-3 border-t border-neutral-800  border-b ">
+          <div className="mt-3 border-t border-neutral-800 border-b">
             <div className="flex items-center gap-2 px-3 py-2 overflow-x-auto whitespace-nowrap">
               <Tab label="user-welcome.tsx" active />
               <Tab label="reset-password.tsx" />
               <Tab label="user-invite.tsx" />
-                <Tab label="weekly-digest.tsx" />
+              <Tab label="weekly-digest.tsx" />
             </div> 
           </div>
 
-          {/* Content container (email preview card) */}
+          {/* Content container */}
           <div className="p-6">
-            <div className="relative rounded-[24px] right-5 w-[400px] p-6">
+            <div className="relative rounded-[24px] w-full max-w-[460px] mx-auto bg-neutral-950">
 
               {/* top radial glow */}
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-x-6 top-0 h-44 rounded-t-[24px] no-scrollbar   
-                           bg-[radial-gradient(ellipse_at_top,_rgba(56,189,248,0.12),transparent_60%)]" />
+                className="pointer-events-none absolute inset-x-6 top-0 h-44 
+                           rounded-t-[24px] no-scrollbar   
+                           bg-[radial-gradient(ellipse_at_top,_rgba(56,189,248,0.12),transparent_60%)]" 
+              />
 
               {/* blue disc icon */}
-               <img src={EmailPreviewImg} alt="EmailPreviewImg" className="h-16 w-16 object-contain item-center mx-auto" />
+              <img
+                src={EmailPreviewImg}
+                alt="EmailPreviewImg"
+                className="h-16 w-16 object-contain mx-auto"
+              />
 
               {/* title */}
               <h1 className="text-center text-2xl sm:text-3xl leading-tight font-medium mt-3">
@@ -69,10 +78,9 @@ export default function EmailPreview() {
               </h1>
 
               {/* body */}
-              <div className="mx-auto mt-8 max-w-[40rem] text-neutral-300 item-center text-left">
+              <div className="mx-auto mt-8 max-w-[36rem] text-neutral-300 text-left">
                 <p className="mb-6">Hello Steve,</p>
-
-                <p className="leading-7 item-center text-left">
+                <p className="leading-7 text-[15px]">
                   We&apos;re excited to have you onboard at <span className="font-semibold">ACME</span>.
                   We hope you enjoy your journey with us. If you have any questions or need
                   assistance, feel free to reach out.
@@ -82,7 +90,7 @@ export default function EmailPreview() {
               {/* CTA */}
               <div className="mt-8 flex justify-center">
                 <button
-                  className="rounded-xl px-4 py-2 text-base font-semibold text-white
+                  className="rounded-xl px-5 py-2 text-base font-semibold text-white
                              bg-sky-500 hover:bg-sky-600 active:bg-sky-700
                              focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/60
                              transition"
@@ -91,8 +99,6 @@ export default function EmailPreview() {
                   Get Started
                 </button>
               </div>
-
-              
             </div>
           </div>
         </div>
