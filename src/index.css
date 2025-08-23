@@ -13,3 +13,12 @@ html, body {
   overflow-y: auto;
 }
  
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+   overflow-x: auto;
+  scrollbar-gutter: stable overlay;   
+}
+
+ 

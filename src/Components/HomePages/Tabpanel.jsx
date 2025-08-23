@@ -51,7 +51,7 @@ const resend = new Resend('re_123456789');
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black  mt-7">
+    <div className="flex items-center justify-center min-h-screen bg-black  md:mt-7 mt-3">
     <div
   className="bg-neutral-900/70 shadow-2xl overflow-hidden
              w-full max-w-[90%] h-full
@@ -62,13 +62,13 @@ const resend = new Resend('re_123456789');
 
         {/* Top bar */}
         <div className="relative flex items-center justify-between h-16 gap-2 px-3 py-2 bg-neutral-950 border-b border-[#D6EBFD30]">
-          {/* Gradient border overlay */}
+          
           <div className="absolute right-0 top-0 h-[2px] w-1/3 bg-[linear-gradient(90deg,rgba(56,189,248,0)_0%,rgba(232,232,232,0.2)_33.02%,rgba(143,143,143,0.67)_64.41%,rgba(236,72,153,0)_98.93%)]"></div>
 
           {/* Framework chips */}
           <div
             className="flex items-center gap-2 whitespace-nowrap w-full pr-2 
-                       overflow-x-hidden hover:overflow-x-auto sm:overflow-x-auto"
+                       overflow-x-auto no-scrollbar"
           >
             {frameworks.map((f) => (
               <div
@@ -85,7 +85,7 @@ const resend = new Resend('re_123456789');
             ))}
           </div>
 
-          {/* Right-side Copy button */}
+          
           <div className="ml-2 hidden sm:flex">
             <button
               onClick={copy}
@@ -105,7 +105,7 @@ const resend = new Resend('re_123456789');
           </div>
         </div>
 
-        {/* Code area */}
+        
         
 {/* Code area */}
 <div className="bg-[#05050A]">
@@ -132,7 +132,6 @@ const resend = new Resend('re_123456789');
     {/* Code */}
     <pre className="overflow-x-auto">
       {lines.map((line, i) => {
-        // simple inline highlighting
         const highlighted = line
         .replace("console.log", `<span style="color:#EBECED">console.log</span>`)
         .replace("{ Resend }", `<span style="color:#EBECED">{ Resend }</span>`)
@@ -157,13 +156,13 @@ const resend = new Resend('re_123456789');
 </div>
 
 
-        {/* Footer */}
+         
         <div className="flex items-center justify-between px-4 py-3 bg-neutral-950/90 text-sm">
           <div className="flex items-center gap-4">
             <a href="#" className="hover:underline">
               View on GitHub
             </a>
-            <a href="#" className="hover:underline">
+            <a href="#" className="hidden md:flex hover:underline">
               Download ZIP
             </a>
           </div>
