@@ -57,7 +57,7 @@ const resend = new Resend('re_123456789');
              w-full max-w-[90%] h-full
              lg:w-[1024px] lg:h-[596px] 
              opacity-100 rounded-[24px]
-             lg:border lg:border-[#D6EBFD30]"
+             border border-[#D6EBFD30]"
 >
 
         {/* Top bar */}
@@ -79,7 +79,7 @@ const resend = new Resend('re_123456789');
                 <img
                   src={f.logo}
                   alt={f.name}
-                  className="md:h-20 md:w-20 h-26 w-26 object-contain"
+                  className="h-20 w-20 object-contain"
                 />
               </div>
             ))}
