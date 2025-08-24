@@ -313,9 +313,9 @@ const BlogPage = () => {
   return (
     <div className="bg-black min-h-screen text-white px-8 md:px-14 py-10 ">
       
-      <div className="flex items-center justify-between mt-26 mb-5">
+      <div className="flex items-center justify-between mt-16 md:mt-26 mb-5">
         <h1
-  className="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent"
+  className="text-5xl font-[Inter] font-bold mb-8 bg-gradient-to-r from-white to-white/50 bg-clip-text text-transparent"
 >
   Blog
 </h1>

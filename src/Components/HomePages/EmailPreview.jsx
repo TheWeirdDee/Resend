@@ -1,6 +1,6 @@
 import React from 'react'
-import tsIcon from '../../assets/Images/Tss.png'
-import EmailPreviewImg from '../../assets/Images/EmailPreviewImg.png'
+import tsIcon from '../../assets/Images/Home/Tss.png'
+import EmailPreviewImg from '../../assets/Images/Home/EmailPreviewImg.png'
    
 function Tab({ label, active = false }) {
   return (
