@@ -1,6 +1,6 @@
 import React from 'react'
 import OurCustomers from "../../Components/CustomerPages/OurCustomers";
-import AllCustomers from "../../Components/CustomerPages/AllCustomers"
+import AllCustomers from "../../Components/CustomerPages/AllCustomers";
 const Customers = () => {
   return (
     <div>

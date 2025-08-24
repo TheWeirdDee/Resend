@@ -10,10 +10,10 @@ const Navbar = () => {
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
     { name: "Customers", path: "/customers" },
-    { name: "Pricing", path: "/pricing" },
-    { name: "Enterprise", path: "/enterprise" },
-    { name: "Changelog", path: "/changelog" },
-    { name: "Docs", path: "/docs" },
+    // { name: "Pricing", path: "/pricing" },
+    // { name: "Enterprise", path: "/enterprise" },
+    // { name: "Changelog", path: "/changelog" },
+    // { name: "Docs", path: "/docs" },
   ];
 
   
