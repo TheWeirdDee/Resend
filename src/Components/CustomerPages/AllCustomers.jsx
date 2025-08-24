@@ -73,7 +73,7 @@ import Eversify from "/src/assets/Images/Customers/AllCustomers/Eversify.png";
 import Prosper from "/src/assets/Images/Customers/AllCustomers/Prosper.png";
 import Finta from "/src/assets/Images/Customers/AllCustomers/Finta.png";
 import Finarylabs from "/src/assets/Images/Customers/AllCustomers/Finarylabs.png";
-import PromptLoop from "/src/assets/Images/Customers/AllCustomers/PromptLoop.png";
+import PromptLoop from "/src/assets/Images/Customers/AllCustomers/Promptloop.png";
 import SocialHustle from "/src/assets/Images/Customers/AllCustomers/SocialHustle.png";
 import Longtail from "/src/assets/Images/Customers/AllCustomers/Longtail.png";
 import Citybox from "/src/assets/Images/Customers/AllCustomers/Citybox.png";
