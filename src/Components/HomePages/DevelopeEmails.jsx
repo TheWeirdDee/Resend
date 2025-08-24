@@ -9,7 +9,7 @@ export default function DevelopEmails() {
   return (
     <section className="bg-black text-white px-6 md:px-16 py-0 text-center">
 
-      {/* 👇 Hide on small screens */}
+       
       <div className="hidden md:block">
         <div className="flex justify-center">
           <div className="p-4 rounded-2xl">
@@ -25,7 +25,7 @@ export default function DevelopEmails() {
           Powered by react-email, our open source component library.
         </p>
 
-        {/* Buttons */}
+         
         <div className="flex justify-center space-x-4 mt-4 md:mt-8">
           <button className="px-4 py-2 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
             Get Started →
@@ -35,7 +35,7 @@ export default function DevelopEmails() {
           </button>
         </div>
 
-        {/* Tab */}
+         
         <div className="flex justify-center mt-0 md:mt-8 mb-6">
           <img
             src={Tab}
@@ -45,7 +45,7 @@ export default function DevelopEmails() {
         </div>
       </div>
 
-      {/* 👇 Show only on small screens */}
+       
       <div className="block md:hidden">
         <EmailPreview />
       </div>
