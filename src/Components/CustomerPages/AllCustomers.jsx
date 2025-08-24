@@ -54,7 +54,7 @@ import Redwoodjs from "/src/assets/Images/Customers/AllCustomers/Redwood.png";
 import Coil from "/src/assets/Images/Customers/AllCustomers/Coil.png";
 import Trendful from "/src/assets/Images/Customers/AllCustomers/Trendful.png";
 import Conscious from "/src/assets/Images/Customers/AllCustomers/Conscious.png";
-import ITravel from "/src/assets/Images/Customers/AllCustomers/ITravel.png";
+import ITravel from "/src/assets/Images/Customers/AllCustomers/iTravel.png";
 import Polar from "/src/assets/Images/Customers/AllCustomers/Polar.png";
 import Vzk from "/src/assets/Images/Customers/AllCustomers/Vzk.png";
 import Nobex from "/src/assets/Images/Customers/AllCustomers/Nobox.png";
