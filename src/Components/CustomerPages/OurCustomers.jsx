@@ -22,7 +22,7 @@ const OurCustomers = () => {
       </p>
 
       
-      <div className="grid grid-cols-2 px-10 sm:flex sm:flex-wrap sm:justify-center gap-3 mb-12">
+      <div className="grid grid-cols-2 px-8  sm:flex sm:flex-wrap sm:justify-center gap-3 mb-12">
   <a href="/blog" className="px-4 py-1 rounded-xl bg-white text-black font-medium text-center">
     Featured
   </a>
@@ -30,7 +30,7 @@ const OurCustomers = () => {
     Developer Tools
   </a>
   <a href="/blog" className="px-4 py-1 rounded-xl bg-neutral-900 text-gray-300 text-center">
-    Artificial Intelligence
+    AI
   </a>
   <a href="/blog" className="px-4 py-1 rounded-xl bg-neutral-900 text-gray-300 text-center">
     Fintech
