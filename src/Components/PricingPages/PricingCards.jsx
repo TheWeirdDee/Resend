@@ -78,6 +78,7 @@ export default function Pricing() {
   const [idx, setIdx] = useState(0);
   
   const percentage = (idx / (marks.length - 1)) * 100;
+
   return (
      
   
@@ -99,10 +100,10 @@ export default function Pricing() {
         </p>
 
          
-        <div className="grid grid-cols-2 px-8 sm:flex sm:flex-wrap sm:justify-center gap-3 mb-12">
+        <div className="grid grid-cols-2 px-4 sm:flex sm:flex-wrap sm:justify-center gap-2 mb-8">
   <a
     href="/pricing"
-    className="px-4 py-2 rounded-xl bg-white text-black font-medium text-center flex items-center justify-center"
+    className="px-2 py-2 rounded-xl bg-white text-black font-medium   text-center flex items-center justify-center"
   >
     Transactional Emails
   </a>
@@ -117,26 +118,26 @@ export default function Pricing() {
       </div>
 
       
-    <div className="max-w-5xl mx-auto px-12 md:px-36 relative z-10">
+    <div className="max-w-5xl mt-2 mx-auto px-12 md:px-36 relative z-10">
       <input
         type="range"
         min={0}
         max={marks.length - 1}
         value={idx}
         onChange={(e) => setIdx(Number(e.target.value))}
-        className="w-full h-1 rounded-full appearance-none cursor-pointer transition-all duration-300"
+        className="w-full h-2 rounded-full  appearance-none cursor-pointer transition-all duration-300"
         aria-label="Monthly email volume"
         style={{
           background: `linear-gradient(to right, white ${percentage}%, #262626 ${percentage}%)`,
         }}
       />
 
-      <div className="mt-2 flex justify-between text-[13px] select-none">
+      <div className="mt-2 flex justify-between md:text-[13px} text-[12px] select-none">
         {marks.map((m, i) => (
           <span
             key={i}
             className={`tabular-nums text-center ${
-              idx === i ? "text-white font-medium" : "text-neutral-400"
+              idx === i ? "text-neutral-200 font-medium" : "text-neutral-400"
             }`}
           >
             <span className="block lg:hidden">{m.short}</span>
@@ -145,12 +146,11 @@ export default function Pricing() {
         ))}
       </div>
     </div>
-  );
-}
+  
 
 
       {/* Card Details*/}
-      <div className="max-w-8xl mx-auto px-14 mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10">
+      <div className="max-w-8xl mx-auto px-8 mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10">
         <Card title="Free" price="$0" subtitle="3,000 emails / mo" cta="Get started">
           <Row>Ticket Support</Row>
           <Row>1-day Data Retention</Row>
