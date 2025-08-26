@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FiCheckCircle } from "react-icons/fi";
 import { RxCrossCircled } from "react-icons/rx";
-import bgbg from "../../assets/Images/bgbg.png";
+import bgbg from "../../assets/Images/Pricing/Bgbg.png";
 
 function Row({ ok = true, children }) {
   return (
