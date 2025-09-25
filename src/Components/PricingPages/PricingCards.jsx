@@ -103,7 +103,7 @@ export default function Pricing() {
         <div className="grid grid-cols-2 px-4 sm:flex sm:flex-wrap sm:justify-center gap-2 mb-8">
   <a
     href="/pricing"
-    className="px-2 py-2 rounded-xl bg-white text-black font-medium   text-center flex items-center justify-center"
+    className="px-2 py-2 rounded-xl bg-[#fcfdff38] text-white font-medium   text-center flex items-center justify-center"
   >
     Transactional Emails
   </a>
@@ -150,8 +150,9 @@ export default function Pricing() {
 
 
       {/* Card Details*/}
-      <div className="max-w-8xl mx-auto px-8 mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10">
-        <Card title="Free" price="$0" subtitle="3,000 emails / mo" cta="Get started">
+      <div className="max-w-6xl mx-auto px-8 mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center relative z-10">
+
+        <Card title="Free" price="$0" subtitle="Up to 3,000 emails / mo" cta="Get started">
           <Row>Ticket Support</Row>
           <Row>1-day Data Retention</Row>
           <Row>1 Domain</Row>
@@ -159,7 +160,7 @@ export default function Pricing() {
           <Row ok={false}>Dedicated IPs</Row>
         </Card>
 
-        <Card title="Pro" price="$20" subtitle="50,000 emails / mo" cta="Get started">
+        <Card title="Pro" price="$20" subtitle="50,000 emails / mo"   cta="Get started">
           <Row>Ticket Support</Row>
           <Row>3-day Data Retention</Row>
           <Row>10 Domains</Row>
@@ -167,15 +168,7 @@ export default function Pricing() {
           <Row ok={false}>Dedicated IPs</Row>
         </Card>
 
-        <Card title="Scale" price="$90" subtitle="100,000 emails / mo" cta="Get started">
-          <Row>Slack & Ticket Support</Row>
-          <Row>7-day Data Retention</Row>
-          <Row>1,000 Domains</Row>
-          <Row>No daily limit</Row>
-          <Row>Dedicated IP with Add-on</Row>
-        </Card>
-
-        <Card title="Enterprise" price="Custom" subtitle="A plan based on your needs" cta="Contact us">
+        <Card title="Enterprise" price="Custom" subtitle="A plan based on your specific needs" cta="Contact us">
           <Row>Priority Support</Row>
           <Row>Flexible Data Retention</Row>
           <Row>Flexible Domains</Row>

@@ -65,7 +65,7 @@ const Navbar = () => {
         
         <div className="flex items-center space-x-4 text-md">
           <NavLink
-            to="/signin"
+            to="/login"
             className={({ isActive }) =>
               `text-[hsla(212,87%,97%,0.71)] font-medium text-[16px] leading-[20px] align-middle transition ${
                 isActive ? "text-white" : "hover:text-white"
@@ -75,7 +75,7 @@ const Navbar = () => {
             Sign in
           </NavLink>
           <NavLink
-            to="/get-started"
+            to="/signUp"
             className="bg-white text-black px-4 py-1.5 rounded-full font-medium hover:bg-gray-200 transition"
           >
             Get Started <span className="ml-1">›</span>
